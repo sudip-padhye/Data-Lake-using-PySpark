@@ -11,7 +11,7 @@ A single song file looks like:
 
 2. A log dataset, which consists of log files in JSON format based on the songs in the dataset above (s3://udacity-dend/log_data).
 A log file looks like:
-<img src="images/log-data.png" alt="drawing" width="800" height="600"/>
+<img src="images/log-data.png" alt="drawing" width="800" height="300"/>
 
 The files are stored in S3 bucket `s3a://udacity-dend` and are ingested into fact and dimension tables that are written as parquet file at location `s3://sparkify-data-lake-sudip/`
 
@@ -93,7 +93,7 @@ First, setup a Glue crawler that points to the bucket folder where the generated
 
 After a few minutes, tables will show up in the Athena console under `Query Editor`:
 
-<img src="images/athena-tables.png" alt="drawing" width="800" height="600"/>
+<img src="images/athena-tables.png" alt="drawing" width="500" height="600"/>
 
 We can run a query to generate the top 5 most active listeners on the platform using the following query:
 
